@@ -1,0 +1,10 @@
+eksctl create cluster -f GitOpsClusterConifg.yaml
+https://eks.handson.flagger.dev/profile/#create-an-eks-cluster
+Declarative gitops for load test with webhooks in canary.yaml routing through ingress gateway
+Since no webhooks we are using flux sync.  Flagger controller manages suffix podprimary for canaery.
+
+export GH_USER=srinivs@gmail.com
+export GH_REPO=appmesh-dev
+
+git clone git@github.com:${GH_USER}/${GH_REPO}
+cd ${GH_REPO}
